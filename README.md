@@ -125,6 +125,7 @@ automatically classified as failures. (see below)
 Top: Here we can clearly see the backbone "jump" from one par of the motif to another
 
 Bottom: Which it does via a >4 Å long peptide bond. In the back you can see two more such bonds. These are correctly identified as chain breaks by RFD3.
+
 <br/>
 <br/>
 
@@ -184,7 +185,7 @@ peptide bond over 2 Å**, concentrated in a few problems:
 ## Data availability
 
 Submitted scaffold set, full evaluation results, and summary results:
-`Zenodo DOI`https://zenodo.org/records/22648416?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjgyNmMwYWI4LWQxMTYtNGM1MS05MGQwLTdhMGJkNmQ1YTk0MyIsImRhdGEiOnt9LCJyYW5kb20iOiI1ODYzMWEzNDRhYzJhNTM0MTc2NTdhZTdiN2EyOGI3MSJ9.X8LziWhdUKI5j9CXQjsj1eLmtQ8jat1DSkT5J3ZAc1Mmu7Rkb5-TtiiKhfkIXHbYplBVThrnZR8BzpJWGCKLWA
+[`Zenodo DOI`](https://zenodo.org/records/22648416?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjgyNmMwYWI4LWQxMTYtNGM1MS05MGQwLTdhMGJkNmQ1YTk0MyIsImRhdGEiOnt9LCJyYW5kb20iOiI1ODYzMWEzNDRhYzJhNTM0MTc2NTdhZTdiN2EyOGI3MSJ9.X8LziWhdUKI5j9CXQjsj1eLmtQ8jat1DSkT5J3ZAc1Mmu7Rkb5-TtiiKhfkIXHbYplBVThrnZR8BzpJWGCKLWA)
 
 
 ## Contact
