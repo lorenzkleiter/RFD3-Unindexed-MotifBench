@@ -184,7 +184,7 @@ peptide bond over 2 Å**, concentrated in a few problems:
 ## Data availability
 
 Submitted scaffold set, full evaluation results, and summary results:
-`<Zenodo DOI to be added>`
+`Zenodo DOI`https://zenodo.org/records/22648416?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjgyNmMwYWI4LWQxMTYtNGM1MS05MGQwLTdhMGJkNmQ1YTk0MyIsImRhdGEiOnt9LCJyYW5kb20iOiI1ODYzMWEzNDRhYzJhNTM0MTc2NTdhZTdiN2EyOGI3MSJ9.X8LziWhdUKI5j9CXQjsj1eLmtQ8jat1DSkT5J3ZAc1Mmu7Rkb5-TtiiKhfkIXHbYplBVThrnZR8BzpJWGCKLWA
 
 
 ## Contact
