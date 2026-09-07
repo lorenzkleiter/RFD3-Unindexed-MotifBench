@@ -10,7 +10,6 @@ Companion to:
 **Results:** unindexed placement scores **31.84 ± 0.56** against **43.52 ± 1.35**
 for hand-written contigs.
 
----
 
 ## Method
 
@@ -54,10 +53,15 @@ a sidechain.
 
 ### Evaluation
 
-Standard MotifBench / Scaffold-Lab pipeline (ProteinMPNN → ESMFold → Foldseek),
-identical installation and Foldseek database for both runs. Scores quoted as
-`MotifBench score` are the official leaderboard bootstrap (subsample 50 of 100
-designs, ×1000, `N_max=50`, `alpha=5`).
+As described below many designs of RFD3 unindex do not reconstitute the
+motif streches correctly. Therefore the standard MotifBench / Scaffold-Lab pipeline would error out on the 'segment_order ' check in check_segment_validity.py 
+
+Instead of making changes to the pipeline I opted to filter out those
+designs beforehand. This means two things.
+1. This works on the assumption that all of these designs should always be discarded,making RMSD checks unnecessary. Because even if the overall fold remains close enough, the motif streches are not faithfully kept.*
+2. The reported success rates are highly infalted and should be disregarded. While the bootsrapped MotifBench score still works nicely, the success rate is calculated per evaluted design.
+
+\* Note: I have seen these split-motif design pass the RMSD checks (although rarely), although part of the motif now sit in another part of the protein.
 
 ### Scripts
 
@@ -71,7 +75,7 @@ designs, ×1000, `N_max=50`, `alpha=5`).
 | [`launch_triplicates.sh`](Scripts/launch_triplicates.sh) | chain the three replicates end to end |
 | [`peptide_bond_census.py`](Scripts/peptide_bond_census.py) | chain-break analysis |
 
----
+
 
 ## Results
 
@@ -85,21 +89,14 @@ designs, ×1000, `N_max=50`, `alpha=5`).
 Per-problem numbers: [`Results/rep1`](Results/rep1), [`Results/rep2`](Results/rep2),
 [`Results/rep3`](Results/rep3).
 
-Against hand-written contigs (**43.52 ± 1.35**, three generation replicates as well):
+I also conputed per-problem MotifBench scores using the same bootstrapping process:
 
 <div align="center">
   <img src="unindexed_fixed_vs_expertguess_fixed.png" alt="Unindexed vs hand-written contigs, per problem" width="900">
 </div>
 
-Unindexing is not uniformly worse. It for example wins on `17_7DGW`, `22_1BCF` and `28_5YUI`, not
-because it had a higher success rate, but more unique solutions. Highlighting one
-possible advantage of unidexing.
+Here you can see that Unindexing is not uniformly worse. It for example wins on `17_7DGW`, `22_1BCF` and `28_5YUI`
 
-
-Note that the score is always out of 100 designs, but only 6571 of the 9000 designs
-generated here are evaluable at all (see below). The rest we scored as failures.
-
----
 
 ## Placement of motif streches in the seq. can go wrong
 
