@@ -122,8 +122,9 @@ automatically classified as failures. (see below)
   <img src="closeup_25_2RKX.png" alt="25_2RKX: two motif chains welded together" width="450">
   <img src="closeup_25_2RKX_sticks.png" alt="25_2RKX: the resulting stretched peptide bonds" width="450">
 </div>
-Left: Here we can clearly see the backbone "jump" from one par of the motif to another
-Right: Which it does via a >4 Å long peptide bond. In the back you can see two more such bonds. These are correctly identified as chain breaks by RFD3.
+Top: Here we can clearly see the backbone "jump" from one par of the motif to another
+
+Bottom: Which it does via a >4 Å long peptide bond. In the back you can see two more such bonds. These are correctly identified as chain breaks by RFD3.
 <br/>
 <br/>
 
@@ -133,8 +134,9 @@ Right: Which it does via a >4 Å long peptide bond. In the back you can see two 
   <img src="7MQQ_reverse_close_up.png" alt="19_7MQQ close-up of the reversed segment" width="450">
 </div>
 
-Left: motif strech again lands at two different parts of the sequence.
-Right: But this time residues A1-A5 are reversed (layed out C→N terminal.) This means that the peptide bonds have to strech > 5 Å to accomidate it. Interestingly these are not cought as chain breakes as RFD3 meassures Cα–Cα distance.
+Top: motif strech again lands at two different parts of the sequence.
+
+Bottom: But this time residues A1-A5 are reversed (layed out C→N terminal.) This means that the peptide bonds have to strech > 5 Å to accomidate it. Interestingly these are not cought as chain breakes as RFD3 meassures Cα–Cα distance.
 
 ```
 design 1-10 : A6 A7 A8 A9 A10 A11 A12 A13 A14 A15
