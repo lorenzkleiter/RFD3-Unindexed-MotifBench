@@ -64,7 +64,7 @@ designs beforehand. This means two things.
 \* Note: As a test I have ran 100 split designs of 15_7A8S through the eval pipeline by skipping check_segment_validity.py. (8/100 designs still technically past the filters) The results can be found [here](https://zenodo.org/records/22682138?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjBmMmYwZDNiLWUyZjEtNGVhNi1hNTUyLTM5YzUyNjEyNWM5NSIsImRhdGEiOnt9LCJyYW5kb20iOiIzNWIzMjYxMWFiMWI2YWE0NmQ0MDJhNjUyZTU4MjBlMiJ9.etRokdbEHRFAucMqgW5-XaLfnF5Z2ao_qFJkmVn3NE9fPTZpK-Hz1R-zExdRB2YN2_T4ECUWUAPTNrFIdP4Dew).
 
 <div align="center">
-  <img src="15_7A8S passing design.png" alt="a plit design passing filters" width="500">
+  <img src="15_7A8S_passing_design.png" alt="a split design passing filters" width="500">
 </div>
 
 Above:Motif (blue) is split intp two parts of the RFD3 backbone (red) MPNN/ESMFold (green) were able to correct for unnatural bond lengths by shifting a loop to the right, while at the same time
