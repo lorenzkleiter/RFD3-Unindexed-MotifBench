@@ -61,7 +61,14 @@ designs beforehand. This means two things.
 1. This works on the assumption that all of these designs should always be discarded,making RMSD checks unnecessary. Because even if the overall fold remains close enough, the motif streches are not faithfully kept.*
 2. The reported success rates are highly infalted and should be disregarded. While the bootsrapped MotifBench score still works nicely, the success rate is calculated per evaluted design.
 
-\* Note: I have seen these split-motif design pass the RMSD checks (although rarely), although part of the motif now sit in another part of the protein.
+\* Note: As a test I have ran 100 split designs of 15_7A8S through the eval pipeline by skipping check_segment_validity.py. (8/100 designs still technically past the filters) The results can be found [here](https://zenodo.org/records/22682138?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6IjBmMmYwZDNiLWUyZjEtNGVhNi1hNTUyLTM5YzUyNjEyNWM5NSIsImRhdGEiOnt9LCJyYW5kb20iOiIzNWIzMjYxMWFiMWI2YWE0NmQ0MDJhNjUyZTU4MjBlMiJ9.etRokdbEHRFAucMqgW5-XaLfnF5Z2ao_qFJkmVn3NE9fPTZpK-Hz1R-zExdRB2YN2_T4ECUWUAPTNrFIdP4Dew).
+
+<div align="center">
+  <img src="15_7A8S passing design.png" alt="a plit design passing filters" width="500">
+</div>
+
+Above:Motif (blue) is split intp two parts of the RFD3 backbone (red) MPNN/ESMFold (green) were able to correct for unnatural bond lengths by shifting a loop to the right, while at the same time
+motif and global rmsd stayed low (0.916 and 0.733 respectively, interestingly global rmsd is under motif rmsd here as the motif is split)
 
 ### Scripts
 
